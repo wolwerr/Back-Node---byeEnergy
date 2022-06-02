@@ -44,5 +44,11 @@ router.put('/update/:id/', async (req: Request, res: Response) => {
     res.status(200).send(generateMessage('Usuario atualizado com sucesso!'));
 });
 
+router.get('/:email/:password', async (req: Request, res: Response) => {
+    const login = await UsuariosService.authenticate(req.params.email,req.params.password)
+    res.send(login)
+})
+
+
 
 export default router;

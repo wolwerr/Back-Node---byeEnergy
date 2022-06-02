@@ -36,4 +36,17 @@ export class UsuariosRepository {
             id: id
         }, usuarios);
     }
+
+    static async getLogin(email: string, password: string) {
+        return getConnection()
+            .getRepository(Usuarios)
+            .findOne(
+                {
+                    where: {
+                        email: email,
+                        password: password
+                    }
+                }
+            )
+    }
 }

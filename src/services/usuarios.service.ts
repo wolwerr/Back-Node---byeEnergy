@@ -26,6 +26,10 @@ class UsuariosService {
     update(id: number, usuarios: Usuarios) {
         return UsuariosRepository.update(id, usuarios);
     }
+
+    authenticate(email: string, password: string) {
+        return UsuariosRepository.getLogin(email, password)
+      }
 }
 
 export default new UsuariosService();
