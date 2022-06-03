@@ -7,11 +7,11 @@ export const connection = createConnection({
     host: 'localhost',
     port: 5432,
     username: 'postgres',
-    password: '123',
+    password: '82032152',
     database: 'usersNode',
     entities: [
         Usuarios
     ],
     logging: true,
-    // synchronize: true
+    synchronize: true
 });
