@@ -7,7 +7,7 @@ export const connection = createConnection({
     host: 'localhost',
     port: 5432,
     username: 'postgres',
-    password: '82032152',
+    password: '123',
     database: 'usersNode',
     entities: [
         Usuarios,
