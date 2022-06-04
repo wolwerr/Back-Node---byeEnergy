@@ -12,6 +12,6 @@ export const connection = createConnection({
     entities: [
         Usuarios
     ],
-    // logging: true,
-    // synchronize: true
+    logging: true,
+    synchronize: true
 });
