@@ -13,8 +13,8 @@ export const connection = createConnection({
         Usuarios,
         Feedbacks
     ],
-    logging: true,
-    synchronize: true,
+    // logging: true,
+    // synchronize: true,
     ssl: true,
     extra: {
         ssl: {
